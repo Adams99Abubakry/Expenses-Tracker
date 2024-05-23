@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Favicon -->
+    <link href="assets/img/favicon.png" rel="icon" />
+  </head>
+  <body>
+    <!-- Main Section container Begins here -->
+    <div class="container">
+      <h1>Income and Expense Tracker</h1>
+      <!-- Dashboard Begins Here -->
+      <main>
+        <header>
+          <div>
+            <h5>Total Balance</h5>
+            ₦
+            <span id="balance">₦0.00</span>
+          </div>
+          <div>
+            <h5>Income</h5>
+            ₦
+            <span id="totalIncome">₦0.00</span>
+          </div>
+          <div>
+            <h5>Expense</h5>
+            ₦
+            <span id="totalExpenses">₦0.00</span>
+          </div>
+        </header>
+      </main>
+      <!-- Dashboard Ends Here -->
+
+      <!-- Income & Expense Begins Here -->
+      <h2>Add New Income</h2>
+      <div class="form">
+        <input
+          type="text"
+          id="incomeDesc"
+          placeholder="Type Income description"
+        />
+        <input type="number" id="incomeAmount" placeholder="Income amount" />
+        <input type="date" id="incomeDate" placeholder="Date" />
+        <button onclick="addIncome()">Add Income</button>
+      </div>
+      <h2>Add New Expense</h2>
+      <div class="form">
+        <input
+          type="text"
+          id="expenseDesc"
+          placeholder="Type Expense description"
+        />
+        <input type="number" id="expenseAmount" placeholder="Expense amount" />
+        <input type="date" id="expenseDate" placeholder="Date" />
+        <button onclick="addExpense()">Add Expense</button>
+      </div>
+      <!-- Income & Expense Ends Here -->
+
+      <!-- Income & Expense List Table Begins here -->
+      <div class="incomes">
+        <h2>Income List</h2>
+        <table id="incomesTable">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Description</th>
+              <th>Amount</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="incomesList"></tbody>
+        </table>
+      </div>
+      <div class="expenses">
+        <h2>Expense List</h2>
+        <table id="expensesTable">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Description</th>
+              <th>Amount</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="expensesList"></tbody>
+        </table>
+        <!-- Income & Expense List Table Ends here -->
+
+        <footer>
+          <div class="footer-container">
+            <div class="footer-section">
+              <h4>About Us</h4>
+              <p>
+                We are a company dedicated to providing the best services and
+                products to our customers.
+              </p>
+            </div>
+            <div class="footer-section">
+              <h4>Contact Us</h4>
+              <p>Kindly click <a href="contact.html">here </a>to contact us</p>
+              <p>
+                Your recommendation and feedback on this project will be highly
+                appriciated
+              </p>
+            </div>
+            <footer>
+              <p>&copy; 2024 Adams Abubakry Siddique. All rights reserved.</p>
+              <div class="social-icons">
+                  <a href="https://www.linkedin.com/in/https://ng.linkedin.com/in/adams-abubakry-siddique-50bb12304" target="_blank">
+                      <img src="https://img.icons8.com/fluency/48/000000/linkedin.png" alt="LinkedIn">
+                  </a>
+                  <a href="https://www.facebook.com/facebook.com/profile.php?id=61559063859395" target="_blank">
+                      <img src="https://img.icons8.com/fluency/48/000000/facebook-new.png" alt="Facebook">
+                  </a>
+                  <a href="https://api.whatsapp.com/send?phone=2349074223243" target="_blank">
+                      <img src="https://img.icons8.com/fluency/48/000000/whatsapp.png" alt="WhatsApp">
+                  </a>
+                  <a href="https://twitter.com/@Abuba7689Adams" target="_blank">
+                      <img src="https://img.icons8.com/color/48/000000/twitter--v1.png" alt="Twitter">
+                  </a>
+              </div>
+          </footer>
+      </div>
+    </div>
+    <!-- Main Section container Ends here -->
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

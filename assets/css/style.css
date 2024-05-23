@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: left;
+}
+
+h1 {
+  text-align: center;
+}
+
+.form {
+  margin-bottom: 20px;
+}
+
+.form input {
+  width: calc(50% - 5px);
+  padding: 8px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.expenses {
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+/* Incomes Table */
+#incomesTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#incomesTable th,
+#incomesTable td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+#incomesTable th {
+  background-color: #007bff;
+  color: #fff;
+}
+
+#incomesTable tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Incomes Table ends */
+
+#expensesTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#expensesTable th,
+#expensesTable td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+#expensesTable th {
+  background-color: #007bffb6;
+  color: #fff;
+}
+
+#expensesTable tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.expenses p {
+  text-align: right;
+  font-weight: bold;
+}
+
+main {
+  max-width: 750px;
+  margin: 1rem;
+  padding: 1 rem;
+}
+
+header {
+  background-color: #007bffb7;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header div {
+  padding: 5px;
+}
+
+header div:first-child {
+  flex-basis: 100%;
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+header div:nth-child(n + 2) {
+  flex-basis: 50%;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+header h5 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Contact Us styling begins here */
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  min-height: 100vh;
+  /* adjust the max-width to your liking */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.contact h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.contact form {
+  width: 340px;
+  text-align: center;
+}
+
+form .input-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-box .input-field {
+  width: 48.5%;
+}
+
+.field .item {
+  width: 100%;
+  padding: 18px;
+  background: transparent;
+  border: 2px solid #007bff;
+  border-radius: 6px;
+  font-size: 16px;
+  margin: 12px;
+}
+
+.field .item::placeholder {
+  color: black;
+}
+
+.field .error-text {
+  font-size: 11px;
+  color: red;
+  margin: -5px 0 10px;
+  display: none;
+}
+
+form .textarea-field .item {
+  resize: none;
+}
+
+form .field .error-text {
+  margin-top: -10px;
+}
+
+form button {
+  padding: 12px 32px;
+  background: #007bff;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  color: white;
+  box-shadow: 0 0 10px #007bff;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+
+form button:hover {
+  box-shadow: none;
+}
+
+/* Footer css begins Here */
+
+footer {
+  background-color: #007bff;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 10px;
+  min-width: 200px; /* Set a minimum width for each section */
+}
+
+.footer-section h4 {
+  border-bottom: 2px solid #555;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  margin: 10px 0;
+}
+
+.social-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-top: 1px solid #555;
+  padding-top: 10px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer-section p a {
+  text-decoration: none;
+  color: yellow;
+}
+
+.footer-bottom-copy p {
+  margin-right: 15px;
+}
+/* Footer css begins Here */
